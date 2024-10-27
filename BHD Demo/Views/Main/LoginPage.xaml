@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BHD_Demo.Views.Main.LoginPage"
+             Title="Login"
+             Shell.NavBarIsVisible="False">
+
+
+              <StackLayout Padding="30" VerticalOptions="Center" Spacing="20">
+        
+                     <Label Text="Login" 
+                     FontSize="34"  HorizontalTextAlignment="Center" 
+                      HorizontalOptions="Center" 
+                     TextColor="Black"
+                      />
+
+                      <!-- Simulated email input -->
+                     <Entry x:Name="EmailEntry" 
+                      Placeholder="Enter any email" 
+                     Keyboard="Email"
+                     TextColor="Black"
+                     PlaceholderColor="#FF3D3B3B" />
+
+                     <!-- Simulated password input -->
+                     <Entry x:Name="PasswordEntry" 
+                      Placeholder="Enter any password" 
+                      IsPassword="True"
+                      TextColor="Black"
+                      PlaceholderColor="#FF3D3B3B" />
+
+                      <!-- Simulated login button -->
+                      <Button Text="Login" 
+                      BackgroundColor="Blue"
+                      TextColor="White"
+                      Command="{Binding LoginCommand}" />
+
+                      <!-- Simulated Google Login -->
+                     <Button Text="Login with Google (Simulated)" 
+                     BackgroundColor="#4285F4"
+                      TextColor="White"
+                     Command="{Binding GoogleLoginCommand}" />
+
+                     <!-- Simulated Biometric Login -->
+                     <Button Text="Use Biometric Login (Simulated)"
+                     BackgroundColor="Green"
+                     TextColor="White"
+                     Command="{Binding BiometricLoginCommand}" />
+
+              </StackLayout>
+    
+</ContentPage>

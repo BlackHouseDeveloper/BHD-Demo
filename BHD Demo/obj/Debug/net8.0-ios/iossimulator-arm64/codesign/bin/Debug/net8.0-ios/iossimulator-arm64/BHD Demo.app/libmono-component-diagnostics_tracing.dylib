@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - /Users/calvinccarter/Projects/BHD Demo/BHD Demo/bin/Debug/net8.0-ios/iossimulator-arm64/BHD Demo.app/libmono-component-diagnostics_tracing.dylib
