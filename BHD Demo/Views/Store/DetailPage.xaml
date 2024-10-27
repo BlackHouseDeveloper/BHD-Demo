@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BHD_Demo.Views.Store.DetailPage"
+             xmlns:viewmodel="clr-namespace:BHD_Demo.ViewModels.Store"
+             x:DataType="viewmodel:DetailViewModel"
+             Title="Detail Page">
+
+    <StackLayout Padding="30" VerticalOptions="Center">
+        
+        <Label Text="Product Details" 
+               FontSize="24" 
+               HorizontalOptions="Center" />
+
+        <!-- Display product name -->
+        <Label Text="Product Name:"
+               FontSize="18"
+               HorizontalOptions="Start" />
+        <Label Text="{Binding Product.Name}" 
+               FontSize="16"
+               HorizontalOptions="Start"  />
+               
+
+        <!-- Display product description -->
+        <Label Text="Description:"
+               FontSize="18"
+               HorizontalOptions="Start" />
+        <Label Text="{Binding Product.Description}" 
+               FontSize="16"
+               HorizontalOptions="Start" />
+
+        <!-- Display product price -->
+        <Label Text="Price:"
+               FontSize="18"
+               HorizontalOptions="Start" />
+        <Label Text="{Binding Product.Price}" 
+               FontSize="16"
+               HorizontalOptions="Start" />
+    
+        
+
+       <!-- Button to Navigate Back to Store Page --> 
+              <Button Text="Back to Store" 
+                     Command="{Binding NavigateToStoreCommand}" 
+                     HorizontalOptions="Center" />
+
+    </StackLayout>
+</ContentPage>

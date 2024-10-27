@@ -1,0 +1,96 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.MvvmToolkitEnableINotifyPropertyChangingSupport = true
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BHD_Demo
+build_property.ProjectDir = /Users/calvinccarter/Projects/BHD Demo/BHD Demo/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[/Users/calvinccarter/Projects/BHD Demo/BHD Demo/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/calvinccarter/Projects/BHD Demo/BHD Demo/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/calvinccarter/Projects/BHD Demo/BHD Demo/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/calvinccarter/Projects/BHD Demo/BHD Demo/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/calvinccarter/Projects/BHD Demo/BHD Demo/Views/GroupApp/GroupAppPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.Views.GroupApp.GroupAppPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/GroupApp/GroupAppPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/GroupApp/GroupAppPage.xaml
+
+[/Users/calvinccarter/Projects/BHD Demo/BHD Demo/Views/Main/DashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.Views.Main.DashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Main/DashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Main/DashboardPage.xaml
+
+[/Users/calvinccarter/Projects/BHD Demo/BHD Demo/Views/Main/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.Views.Main.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Main/LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Main/LoginPage.xaml
+
+[/Users/calvinccarter/Projects/BHD Demo/BHD Demo/Views/Main/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.Views.Main.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Main/RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Main/RegisterPage.xaml
+
+[/Users/calvinccarter/Projects/BHD Demo/BHD Demo/Views/Main/WelcomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.Views.Main.WelcomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Main/WelcomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Main/WelcomePage.xaml
+
+[/Users/calvinccarter/Projects/BHD Demo/BHD Demo/Views/Service/ServiceDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.Views.Service.ServiceDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Service/ServiceDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Service/ServiceDetailPage.xaml
+
+[/Users/calvinccarter/Projects/BHD Demo/BHD Demo/Views/Service/ServiceSchedulerPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.Views.Service.ServiceSchedulerPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Service/ServiceSchedulerPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Service/ServiceSchedulerPage.xaml
+
+[/Users/calvinccarter/Projects/BHD Demo/BHD Demo/Views/Store/DetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.Views.Store.DetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Store/DetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Store/DetailPage.xaml
+
+[/Users/calvinccarter/Projects/BHD Demo/BHD Demo/Views/Store/StorePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.Views.Store.StorePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Store/StorePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Store/StorePage.xaml
