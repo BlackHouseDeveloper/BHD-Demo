@@ -17,9 +17,9 @@
 /Users/calvinccarter/Projects/BHD Demo/BHD Demo/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/resizetizer/r/Assets.xcassets/appicon.appiconset/appicon20x20@3x.png
 /Users/calvinccarter/Projects/BHD Demo/BHD Demo/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/resizetizer/r/Assets.xcassets/appicon.appiconset/appicon20x20@2x.png
 /Users/calvinccarter/Projects/BHD Demo/BHD Demo/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/resizetizer/r/Assets.xcassets/appicon.appiconset/Contents.json
+/Users/calvinccarter/Projects/BHD Demo/BHD Demo/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/resizetizer/r/Resources/loginbckgrnd1.png
 /Users/calvinccarter/Projects/BHD Demo/BHD Demo/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/resizetizer/r/Resources/bhd_logo.png
 /Users/calvinccarter/Projects/BHD Demo/BHD Demo/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/resizetizer/r/Resources/loginbckgrnd.png
-/Users/calvinccarter/Projects/BHD Demo/BHD Demo/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/resizetizer/r/Resources/loginbckgrnd1.png
 /Users/calvinccarter/Projects/BHD Demo/BHD Demo/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/mauiimage.stamp
 /Users/calvinccarter/Projects/BHD Demo/BHD Demo/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/mauiimage.outputs
 /Users/calvinccarter/Projects/BHD Demo/BHD Demo/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/resizetizer/f/MauiInfo.plist
@@ -220,3 +220,4 @@
 /Users/calvinccarter/Projects/BHD Demo/BHD Demo/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/BHD Demo.AssemblyInfoInputs.cache
 /Users/calvinccarter/Projects/BHD Demo/BHD Demo/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/BHD Demo.AssemblyInfo.cs
 /Users/calvinccarter/Projects/BHD Demo/BHD Demo/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/BHD Demo.csproj.CoreCompileInputs.cache
+/Users/calvinccarter/Projects/BHD Demo/BHD Demo/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/BHD Demo.sourcelink.json
