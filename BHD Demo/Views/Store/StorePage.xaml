@@ -5,35 +5,37 @@
              x:Name="StorePageInstance">
 
 
-    <StackLayout Padding="30" VerticalOptions="FillAndExpand">
-        
-        <Label Text="Available Products" 
-               FontSize="24" 
-               HorizontalOptions="Center" />
+    <StackLayout Padding="30"
+                 VerticalOptions="FillAndExpand">
+
+        <Label Text="Available Products"
+               FontSize="24"
+               HorizontalOptions="Center"/>
 
         <!-- ListView for Products -->
-        <ListView ItemsSource="{Binding Products}" 
-                  SelectedItem="{Binding SelectedProduct, Mode=TwoWay}" 
+        <ListView ItemsSource="{Binding Products}"
+                  SelectedItem="{Binding SelectedProduct, Mode=TwoWay}"
                   VerticalOptions="FillAndExpand">
-            
+
             <ListView.ItemTemplate>
-               <DataTemplate>
-                    <TextCell  Text="{Binding Name}" Detail="{Binding Price}" />
+                <DataTemplate>
+                    <TextCell  Text="{Binding Name}"
+                               Detail="{Binding Price}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
 
 
         <!-- Button to View Details of Selected Product -->
-                <Button Text="View Details"
-                Command="{Binding NavigateToDetailCommand}" 
-                IsEnabled="{Binding SelectedProduct}" />
+        <Button Text="View Details"
+                Command="{Binding NavigateToDetailCommand}"
+                IsEnabled="{Binding SelectedProduct}"/>
 
 
         <!-- Button to Add Selected Product to Cart -->
         <Button Text="Add to Cart"
-                Command="{Binding AddToCartCommand}" 
-                IsEnabled="{Binding SelectedProduct}" />
+                Command="{Binding AddToCartCommand}"
+                IsEnabled="{Binding SelectedProduct}"/>
 
     </StackLayout>
 

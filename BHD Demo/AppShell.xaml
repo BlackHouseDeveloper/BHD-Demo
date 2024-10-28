@@ -8,31 +8,40 @@
        x:Class="BHD_Demo.AppShell"
        Shell.FlyoutBehavior="Disabled">
 
-<!-- Define routes for all main pages -->
+    <!-- Define routes for all main pages -->
     <!-- Welcome Page -->
-    <ShellContent Route="welcome" ContentTemplate="{DataTemplate main:WelcomePage}" />
+    <ShellContent Route="welcome"
+            ContentTemplate="{DataTemplate main:WelcomePage}"/>
     <!-- Register Page -->
-    <ShellContent Route="register" ContentTemplate="{DataTemplate main:RegisterPage}" />
+    <ShellContent Route="register"
+            ContentTemplate="{DataTemplate main:RegisterPage}"/>
     <!-- Main Dashboard -->
-    <ShellContent Route="dashboard" ContentTemplate="{DataTemplate main:DashboardPage}" > 
-            <Shell.BackButtonBehavior>
-                 <BackButtonBehavior IsEnabled="False" />
-            </Shell.BackButtonBehavior>
+    <ShellContent Route="dashboard"
+            ContentTemplate="{DataTemplate main:DashboardPage}">
+        <Shell.BackButtonBehavior>
+            <BackButtonBehavior IsEnabled="False"/>
+        </Shell.BackButtonBehavior>
     </ShellContent>
-        <!-- Simulated Login -->
-    <ShellContent Route="login" ContentTemplate="{DataTemplate main:LoginPage}" />
+    <!-- Simulated Login -->
+    <ShellContent Route="login"
+            ContentTemplate="{DataTemplate main:LoginPage}"/>
 
-   
+
     <!-- Define Store-related routes -->
-    <ShellContent Route="store" ContentTemplate="{DataTemplate store:StorePage}" />
-    <ShellContent Route="detailpage" ContentTemplate="{DataTemplate store:DetailPage}" />
+    <ShellContent Route="store"
+            ContentTemplate="{DataTemplate store:StorePage}"/>
+    <ShellContent Route="detailpage"
+            ContentTemplate="{DataTemplate store:DetailPage}"/>
 
     <!-- Define ServiceScheduler-related routes -->
-    <ShellContent Route="scheduler" ContentTemplate="{DataTemplate service:ServiceSchedulerPage}" />
-    <ShellContent Route="servicedetail" ContentTemplate="{DataTemplate service:ServiceDetailPage}" />
+    <ShellContent Route="scheduler"
+            ContentTemplate="{DataTemplate service:ServiceSchedulerPage}"/>
+    <ShellContent Route="servicedetail"
+            ContentTemplate="{DataTemplate service:ServiceDetailPage}"/>
 
     <!-- Group App Page -->
-    <ShellContent Route="groupapp" ContentTemplate="{DataTemplate groupapp:GroupAppPage}" />
+    <ShellContent Route="groupapp"
+            ContentTemplate="{DataTemplate groupapp:GroupAppPage}"/>
 
 
 

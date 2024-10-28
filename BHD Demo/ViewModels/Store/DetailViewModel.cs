@@ -23,11 +23,11 @@ namespace BHD_Demo.ViewModels.Store
             // Initialize with dummy data for testing
             Product = new Product
             {
-                 Name = "Sample Product",
-                 Description = "This is a sample product description.",
-                 Price = "99.99"
-             };
-        
+                Name = "Sample Product",
+                Description = "This is a sample product description.",
+                Price = "99.99"
+            };
+
             // Commands for navigation
             NavigateToStoreCommand = new RelayCommand(async () => await Shell.Current.GoToAsync("//store"));
             //NavigateToCartCommand = new RelayCommand(async () => await Shell.Current.GoToAsync("//cart"));
@@ -45,5 +45,5 @@ namespace BHD_Demo.ViewModels.Store
     }
 
 
-    
+
 }

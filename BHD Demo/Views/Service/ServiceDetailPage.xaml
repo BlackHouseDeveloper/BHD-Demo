@@ -2,19 +2,31 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BHD_Demo.Views.Service.ServiceDetailPage"
+             xmlns:viewmodel="clr-namespace:BHD_Demo.ViewModels.Service"
+             x:DataType="viewmodel:ServiceDetailViewModel"
              Title="Service Details">
 
-    <StackLayout Padding="20" VerticalOptions="Center">
-        
-        <Label Text="Service Details" 
-               FontSize="24" 
-               HorizontalOptions="Center" />
+       <StackLayout Padding="20"
+                    VerticalOptions="Center">
 
-        <Label Text="Service Date:" FontSize="18" />
-        <Label Text="{Binding ServiceDate}" FontSize="16" />
+              <Label Text="Service Details"
+                     FontSize="24"
+                     HorizontalOptions="Center"/>
 
-        <Label Text="Service Time:" FontSize="18" />
-        <Label Text="{Binding ServiceTime}" FontSize="16" />
-        
-    </StackLayout>
+              <Label Text="Service Date:"
+                     FontSize="18"/>
+              <Label Text="{Binding ServiceDate, StringFormat='{}{0:MMMM dd, yyyy}'}"
+                     FontSize="16"/>
+
+              <Label Text="Service Time:"
+                     FontSize="18"/>
+              <Label Text="{Binding ServiceTime, StringFormat='{}{0:hh\\:mm}'}"
+                     FontSize="16"/>
+
+              <!-- Button to Navigate Back to Store Page -->
+              <Button Text="Back to Scheduler"
+                      Command="{Binding NavigateToServicechedulerCommand}"
+                      HorizontalOptions="Center"/>
+
+       </StackLayout>
 </ContentPage>

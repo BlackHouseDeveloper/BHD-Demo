@@ -6,43 +6,44 @@
              x:DataType="viewmodel:DetailViewModel"
              Title="Detail Page">
 
-    <StackLayout Padding="30" VerticalOptions="Center">
-        
-        <Label Text="Product Details" 
-               FontSize="24" 
-               HorizontalOptions="Center" />
+       <StackLayout Padding="30"
+                    VerticalOptions="Center">
 
-        <!-- Display product name -->
-        <Label Text="Product Name:"
-               FontSize="18"
-               HorizontalOptions="Start" />
-        <Label Text="{Binding Product.Name}" 
-               FontSize="16"
-               HorizontalOptions="Start"  />
-               
+              <Label Text="Product Details"
+                     FontSize="24"
+                     HorizontalOptions="Center"/>
 
-        <!-- Display product description -->
-        <Label Text="Description:"
-               FontSize="18"
-               HorizontalOptions="Start" />
-        <Label Text="{Binding Product.Description}" 
-               FontSize="16"
-               HorizontalOptions="Start" />
+              <!-- Display product name -->
+              <Label Text="Product Name:"
+                     FontSize="18"
+                     HorizontalOptions="Start"/>
+              <Label Text="{Binding Product.Name}"
+                     FontSize="16"
+                     HorizontalOptions="Start"/>
 
-        <!-- Display product price -->
-        <Label Text="Price:"
-               FontSize="18"
-               HorizontalOptions="Start" />
-        <Label Text="{Binding Product.Price}" 
-               FontSize="16"
-               HorizontalOptions="Start" />
-    
-        
 
-       <!-- Button to Navigate Back to Store Page --> 
-              <Button Text="Back to Store" 
-                     Command="{Binding NavigateToStoreCommand}" 
-                     HorizontalOptions="Center" />
+              <!-- Display product description -->
+              <Label Text="Description:"
+                     FontSize="18"
+                     HorizontalOptions="Start"/>
+              <Label Text="{Binding Product.Description}"
+                     FontSize="16"
+                     HorizontalOptions="Start"/>
 
-    </StackLayout>
+              <!-- Display product price -->
+              <Label Text="Price:"
+                     FontSize="18"
+                     HorizontalOptions="Start"/>
+              <Label Text="{Binding Product.Price}"
+                     FontSize="16"
+                     HorizontalOptions="Start"/>
+
+
+
+              <!-- Button to Navigate Back to Store Page -->
+              <Button Text="Back to Store"
+                      Command="{Binding NavigateToStoreCommand}"
+                      HorizontalOptions="Center"/>
+
+       </StackLayout>
 </ContentPage>

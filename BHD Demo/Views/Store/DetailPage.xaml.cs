@@ -5,21 +5,21 @@ using System.Threading.Tasks;
 
 namespace BHD_Demo.Views.Store
 {
-    
+
     public partial class DetailPage : ContentPage
     {
-        
+
         public DetailPage(DetailViewModel vm)
         {
             // Set the binding context to the DetailViewModel
-            
+
             InitializeComponent();
             BindingContext = vm;
 
             // Debugging: Check the BindingContext and Product property
             Console.WriteLine($"BindingContext: {BindingContext}");
             Console.WriteLine($"Product: {vm.Product?.Name}, {vm.Product?.Description}, {vm.Product?.Price}");
-           
+
         }
 
 
@@ -29,7 +29,7 @@ namespace BHD_Demo.Views.Store
 
             // Log parameter values
             //Console.WriteLine($"ProductName: {ProductName}");
-           // Console.WriteLine($"ProductDescription: {ProductDescription}");
+            //Console.WriteLine($"ProductDescription: {ProductDescription}");
             //Console.WriteLine($"ProductPrice: {ProductPrice}");
             Console.WriteLine("Navigated to DetailPage");
 

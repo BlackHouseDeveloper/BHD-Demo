@@ -10,7 +10,7 @@ namespace BHD_Demo.ViewModels.Store
     public partial class StoreViewModel : BaseViewModel
     {
         public ObservableCollection<Product> Products { get; }
-       
+
         [ObservableProperty]
         public Product? selectedProduct;
 
@@ -20,7 +20,7 @@ namespace BHD_Demo.ViewModels.Store
 
         public StoreViewModel()
         {
-           // Initialize the product list
+            // Initialize the product list
             Products = new ObservableCollection<Product>
             {
                 new Product { Name = "Product 1", Price = "$10.00", Description = "This is Product 1." },
@@ -50,7 +50,7 @@ namespace BHD_Demo.ViewModels.Store
                 try
                 {
                     // Navigate to the DetailPage and pass the selected product
-                    await Shell.Current.GoToAsync($"///detailpage", 
+                    await Shell.Current.GoToAsync($"///detailpage",
                     new Dictionary<string, object>
                     {
                         { "Product", SelectedProduct }
@@ -59,16 +59,16 @@ namespace BHD_Demo.ViewModels.Store
                 catch (Exception ex)
                 {
 
- 
-  
-              // Handle or log the exception
+
+
+                    // Handle or log the exception
                     Console.WriteLine($"Navigation failed: {ex.Message}");
                 }
 
 
- 
-  
+
+
             }
         }
     }
-}    
+}

@@ -4,33 +4,35 @@
              x:Class="BHD_Demo.Views.Service.ServiceSchedulerPage"
              Title="Schedule a Service">
 
-     <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
-        
+    <StackLayout Padding="20"
+            VerticalOptions="CenterAndExpand">
+
         <Label Text="Schedule a Service"
-               FontSize="24" 
-               HorizontalOptions="Center" />
+               FontSize="24"
+               HorizontalOptions="Center"/>
 
         <!-- Date Picker for selecting the service date -->
         <DatePicker x:Name="ServiceDatePicker"
-                    Date="{Binding SelectedDate}" />
+                    Date="{Binding SelectedDate}"/>
 
         <!-- Time Slot Selection -->
-        <Label Text="Available Time Slots" FontSize="18" />
-        <ListView ItemsSource="{Binding AvailableTimeSlots}" 
-                  SelectedItem="{Binding SelectedTimeSlot}" 
+        <Label Text="Available Time Slots"
+                FontSize="18"/>
+        <ListView ItemsSource="{Binding AvailableTimeSlots}"
+                  SelectedItem="{Binding SelectedTimeSlot}"
                   VerticalOptions="FillAndExpand">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding}" />
+                    <TextCell Text="{Binding}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
 
         <!-- Button to confirm the booking -->
         <Button Text="Book Service"
-                Command="{Binding BookServiceCommand}" 
-                IsEnabled="{Binding SelectedTimeSlot, Converter={StaticResource NullToBooleanConverter}}" />
+                Command="{Binding BookServiceCommand}"
+                IsEnabled="{Binding SelectedTimeSlot, Converter={StaticResource NullToBooleanConverter}}"/>
 
     </StackLayout>
-             
+
 </ContentPage>

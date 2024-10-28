@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.Logging;
 using BHD_Demo.ViewModels.Store;
 using BHD_Demo.Views.Store;
+using BHD_Demo.ViewModels.Service;
+using BHD_Demo.Views.Service;
 
 namespace BHD_Demo;
 
@@ -18,11 +20,20 @@ public static class MauiProgram
 				fonts.AddFont("Iceland-Regular.ttf", "Iceland");
 			});
 
-builder.Services.AddSingleton<StoreViewModel>();
-builder.Services.AddTransient<DetailViewModel>();
 
-builder.Services.AddSingleton<StorePage>();
-builder.Services.AddTransient<DetailPage>();
+		//Register ViewModels
+		builder.Services.AddSingleton<StoreViewModel>();
+		builder.Services.AddTransient<DetailViewModel>();
+
+		builder.Services.AddSingleton<ServiceSchedulerViewModel>();
+		builder.Services.AddTransient<ServiceDetailViewModel>();
+
+		//Register Pages
+		builder.Services.AddSingleton<StorePage>();
+		builder.Services.AddTransient<DetailPage>();
+
+		builder.Services.AddSingleton<ServiceSchedulerPage>();
+		builder.Services.AddTransient<ServiceDetailPage>();
 
 #if DEBUG
 		builder.Logging.AddDebug();

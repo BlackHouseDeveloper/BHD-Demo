@@ -5,97 +5,119 @@
              Title="Welcome"
              Shell.NavBarIsVisible="False"
              BackgroundColor="#FF690B69">
-<Grid RowDefinitions="*,*,*"  >  
-         <Image  Aspect="AspectFill" Source="loginbckgrnd1.png"   Opacity=".5" Grid.RowSpan="3"/>
-    
-              <Image Source="bhd_logo.png" 
-                     HeightRequest="240"
-                     HorizontalOptions="Center" 
-                     VerticalOptions="Start"
-                     Grid.Row="0"
-                      />
+    <Grid RowDefinitions="*,*,*">
+        <Image  Aspect="AspectFill"
+                Source="loginbckgrnd1.png"
+                Opacity=".5"
+                Grid.RowSpan="3"/>
+
+        <Image Source="bhd_logo.png"
+               HeightRequest="240"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               Grid.Row="0"/>
 
         <Label Text="Black House Developer's Showcase App"
-               FontSize="34" 
+               FontSize="34"
                HorizontalOptions="Center"
                HorizontalTextAlignment="Center"
                FontFamily="Iceland"
-               TextColor="White" 
+               TextColor="White"
                Grid.Row="1"/>
-        <StackLayout Grid.Row="2" Padding="30" VerticalOptions="Center" Spacing="20">
-        
-       
+        <StackLayout Grid.Row="2"
+                Padding="30"
+                VerticalOptions="Center"
+                Spacing="20">
 
-        <!-- Login Button -->
-        <Button Text="Login" 
-                FontSize="18"
-                CornerRadius="10"
-                Padding="10"
-                Command="{Binding NavigateToLoginCommand}"
-                BackgroundColor="Black" >
+
+
+            <!-- Login Button -->
+            <Button Text="Login"
+                    FontSize="18"
+                    CornerRadius="10"
+                    Padding="10"
+                    Command="{Binding NavigateToLoginCommand}"
+                    BackgroundColor="Black">
 
                 <VisualStateManager.VisualStateGroups>
                     <VisualStateGroup x:Name="CommonStates">
                         <!-- Pressed state: lighter black -->
                         <VisualState x:Name="Pressed">
                             <VisualState.Setters>
-                             <Setter Property="BackgroundColor" Value="#333333" />  <!-- Lighter black on press -->
-                             <Setter Property="Scale" Value="0.95" />             <!-- Makes Button smaller -->
+                                <Setter Property="BackgroundColor"
+                                        Value="#333333"/>
+                                <!-- Lighter black on press -->
+                                <Setter Property="Scale"
+                                        Value="0.95"/>
+                                <!-- Makes Button smaller -->
                             </VisualState.Setters>
-                         </VisualState>
+                        </VisualState>
                         <!-- Normal state: pure black background -->
-                         <VisualState x:Name="Normal">
+                        <VisualState x:Name="Normal">
                             <VisualState.Setters>
-                                <Setter Property="BackgroundColor" Value="Black" />    <!-- Pure black background -->
-                                <Setter Property="Scale" Value="1" />           <!-- No elevation -->
+                                <Setter Property="BackgroundColor"
+                                        Value="Black"/>
+                                <!-- Pure black background -->
+                                <Setter Property="Scale"
+                                        Value="1"/>
+                                <!-- No elevation -->
                             </VisualState.Setters>
                         </VisualState>
                     </VisualStateGroup>
                 </VisualStateManager.VisualStateGroups>
-        </Button>
+            </Button>
 
-        <!-- Register Button -->
-        <Button Text="Register" 
-                FontSize="18"
-                CornerRadius="10"
-                Padding="10"
-                Command="{Binding NavigateToRegisterCommand}"
-                BackgroundColor="Black"  >
+            <!-- Register Button -->
+            <Button Text="Register"
+                    FontSize="18"
+                    CornerRadius="10"
+                    Padding="10"
+                    Command="{Binding NavigateToRegisterCommand}"
+                    BackgroundColor="Black">
 
-                 <VisualStateManager.VisualStateGroups>
+                <VisualStateManager.VisualStateGroups>
                     <VisualStateGroup x:Name="CommonStates">
                         <!-- Pressed state: lighter black -->
                         <VisualState x:Name="Pressed">
                             <VisualState.Setters>
-                             <Setter Property="BackgroundColor" Value="#333333" />  <!-- Lighter black on press -->
-                             <Setter Property="Scale" Value="0.95" />             <!-- Makes Button smaller -->
+                                <Setter Property="BackgroundColor"
+                                        Value="#333333"/>
+                                <!-- Lighter black on press -->
+                                <Setter Property="Scale"
+                                        Value="0.95"/>
+                                <!-- Makes Button smaller -->
                             </VisualState.Setters>
-                         </VisualState>
+                        </VisualState>
                         <!-- Normal state: pure black background -->
-                         <VisualState x:Name="Normal">
+                        <VisualState x:Name="Normal">
                             <VisualState.Setters>
-                                <Setter Property="BackgroundColor" Value="Black" />    <!-- Pure black background -->
-                                <Setter Property="Scale" Value="1" />           <!-- No elevation -->
+                                <Setter Property="BackgroundColor"
+                                        Value="Black"/>
+                                <!-- Pure black background -->
+                                <Setter Property="Scale"
+                                        Value="1"/>
+                                <!-- No elevation -->
                             </VisualState.Setters>
                         </VisualState>
                     </VisualStateGroup>
                 </VisualStateManager.VisualStateGroups>
 
-        </Button>        
+            </Button>
 
-        <!-- Skip to Dashboard -->
-        <Label Text="Skip"
-               FontSize="14"
-               HorizontalOptions="Center"
-               TextDecorations="Underline"
-               TextColor="white">
-               
-            <Label.GestureRecognizers>
-                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" /> <!-- Event handler for tap -->
-            </Label.GestureRecognizers>
-        </Label>
-        
-        
-    </StackLayout>
+            <!-- Skip to Dashboard -->
+            <Label Text="Skip"
+                   FontSize="14"
+                   HorizontalOptions="Center"
+                   TextDecorations="Underline"
+                   TextColor="white">
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    <!-- Event handler for tap -->
+                </Label.GestureRecognizers>
+            </Label>
+
+
+        </StackLayout>
     </Grid>
 </ContentPage>

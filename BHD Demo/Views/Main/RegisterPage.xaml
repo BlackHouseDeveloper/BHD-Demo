@@ -4,29 +4,31 @@
              x:Class="BHD_Demo.Views.Main.RegisterPage"
              Title="Register">
 
-    <StackLayout Padding="30" VerticalOptions="Center" Spacing="20">
-        
-        <Label Text="Register" 
-               FontSize="24" 
-               HorizontalOptions="Center" />
+       <StackLayout Padding="30"
+                     VerticalOptions="Center"
+                     Spacing="20">
 
-        <!-- Username Entry -->
-        <Entry Placeholder="Username"
-               Text="{Binding Username}" />
+              <Label Text="Register"
+                     FontSize="24"
+                     HorizontalOptions="Center"/>
 
-        <!-- Email Entry -->
-        <Entry Placeholder="Email"
-               Text="{Binding Email}"
-               Keyboard="Email" />
+              <!-- Username Entry -->
+              <Entry Placeholder="Username"
+                     Text="{Binding Username}"/>
 
-        <!-- Password Entry -->
-        <Entry Placeholder="Password" 
-               IsPassword="True"
-               Text="{Binding Password}" />
+              <!-- Email Entry -->
+              <Entry Placeholder="Email"
+                     Text="{Binding Email}"
+                     Keyboard="Email"/>
 
-        <!-- Register Button -->
-        <Button Text="Register" 
-                Command="{Binding RegisterCommand}" />
-        
-    </StackLayout>
+              <!-- Password Entry -->
+              <Entry Placeholder="Password"
+                     IsPassword="True"
+                     Text="{Binding Password}"/>
+
+              <!-- Register Button -->
+              <Button Text="Register"
+                      Command="{Binding RegisterCommand}"/>
+
+       </StackLayout>
 </ContentPage>
