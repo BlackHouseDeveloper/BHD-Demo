@@ -4,7 +4,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace BHD_Demo.ViewModels
 {
-    public class BaseViewModel :  ObservableObject, INotifyPropertyChanged
+    public class BaseViewModel : ObservableObject, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

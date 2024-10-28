@@ -10,7 +10,7 @@ namespace BHD_Demo.Views.Store
             InitializeComponent();
 
             BindingContext = vm;
-            
+
         }
 
 

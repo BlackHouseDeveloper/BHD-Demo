@@ -2,29 +2,30 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BHD_Demo.Views.Main.DashboardPage"
-             Title="BHD Demo Dashboard"
-             >
+             Title="BHD Demo Dashboard">
 
-    <StackLayout Padding="30" VerticalOptions="Center" Spacing="20">
-        
-        <Label Text="Welcome to BHD Demo App!" 
-               FontSize="24" 
-               HorizontalOptions="Center" />
+        <StackLayout Padding="30"
+                     VerticalOptions="Center"
+                     Spacing="20">
 
-        <!-- Button for Store Sample -->
-        <Button Text="Go to Store" 
-                FontSize="18"
-                Command="{Binding NavigateToStoreCommand}" />
+                <Label Text="Welcome to BHD Demo App!"
+                       FontSize="24"
+                       HorizontalOptions="Center"/>
 
-        <!-- Button for Service Scheduler Sample -->
-        <Button Text="Go to Service Scheduler" 
-                FontSize="18"
-                Command="{Binding NavigateToServiceCommand}" />
+                <!-- Button for Store Sample -->
+                <Button Text="Go to Store"
+                        FontSize="18"
+                        Command="{Binding NavigateToStoreCommand}"/>
 
-        <!-- Button for Organizational/Group App Sample -->
-        <Button Text="Go to Group App" 
-                FontSize="18"
-                Command="{Binding NavigateToGroupAppCommand}" />
+                <!-- Button for Service Scheduler Sample -->
+                <Button Text="Go to Service Scheduler"
+                        FontSize="18"
+                        Command="{Binding NavigateToServiceCommand}"/>
 
-    </StackLayout>
+                <!-- Button for Organizational/Group App Sample -->
+                <Button Text="Go to Group App"
+                        FontSize="18"
+                        Command="{Binding NavigateToGroupAppCommand}"/>
+
+        </StackLayout>
 </ContentPage>

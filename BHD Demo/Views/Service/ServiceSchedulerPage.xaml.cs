@@ -5,10 +5,10 @@ namespace BHD_Demo.Views.Service
 {
     public partial class ServiceSchedulerPage : ContentPage
     {
-        public ServiceSchedulerPage()
+        public ServiceSchedulerPage(ServiceSchedulerViewModel vm)
         {
             InitializeComponent();
-            BindingContext = new ServiceSchedulerViewModel();  // Set the ViewModel for the page
+            BindingContext = vm;  // Set the ViewModel for the page
         }
     }
 }

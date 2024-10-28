@@ -1,28 +1,32 @@
 using System;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
+using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.Maui.Controls;
 
 namespace BHD_Demo.ViewModels.Service
 {
-    public class ServiceSchedulerViewModel : BaseViewModel
+    public partial class ServiceSchedulerViewModel : BaseViewModel
     {
-        public DateTime SelectedDate { get; set; } = DateTime.Now;
-        public ObservableCollection<string> AvailableTimeSlots { get; set; }
-        public string SelectedTimeSlot { get; set; }
+        [ObservableProperty]
+        public DateTime selectedDate = DateTime.Now;
+        public ObservableCollection<TimeSpan> AvailableTimeSlots { get; set; }
+        [ObservableProperty]
+        public TimeSpan? selectedTimeSlot;
 
-        public ICommand BookServiceCommand { get; }
-        public ICommand NavigateToServiceDetailCommand { get; }
+        public RelayCommand BookServiceCommand { get; }
+        public RelayCommand NavigateToServiceDetailCommand { get; }
 
         public ServiceSchedulerViewModel()
         {
             // Initialize available time slots
-            AvailableTimeSlots = new ObservableCollection<string>();
+            AvailableTimeSlots = new ObservableCollection<TimeSpan>();
             LoadAvailableTimeSlots();
 
             // Commands
-            BookServiceCommand = new Command(OnBookService);
-            NavigateToServiceDetailCommand = new Command(NavigateToServiceDetail);
+            BookServiceCommand = new RelayCommand(OnBookService);
+            NavigateToServiceDetailCommand = new RelayCommand(NavigateToServiceDetail);
         }
 
         private void LoadAvailableTimeSlots()
@@ -31,38 +35,41 @@ namespace BHD_Demo.ViewModels.Service
             AvailableTimeSlots.Clear();
             for (int hour = 9; hour <= 17; hour++)
             {
-                AvailableTimeSlots.Add($"{hour}:00 AM");
-                AvailableTimeSlots.Add($"{hour}:30 AM");
+                AvailableTimeSlots.Add(new TimeSpan(hour, 0, 0));
+                AvailableTimeSlots.Add(new TimeSpan(hour, 30, 0));
             }
 
             // Adjust for PM times
-            for (int hour = 1; hour <= 5; hour++)
+            for (int hour = 13; hour <= 17; hour++)
             {
-                AvailableTimeSlots.Add($"{hour}:00 PM");
-                AvailableTimeSlots.Add($"{hour}:30 PM");
+                AvailableTimeSlots.Add(new TimeSpan(hour, 0, 0));
+                AvailableTimeSlots.Add(new TimeSpan(hour, 30, 0));
             }
         }
 
         private async void OnBookService()
         {
-            if (!string.IsNullOrWhiteSpace(SelectedTimeSlot))
+            if (SelectedTimeSlot.HasValue)
             {
-                await Application.Current.MainPage.DisplayAlert("Service Booked", 
-                    $"Service booked on {SelectedDate:MMMM dd, yyyy} at {SelectedTimeSlot}.", 
+                await Application.Current.MainPage.DisplayAlert("Service Booked",
+                    $"Service booked on {SelectedDate:MMMM dd, yyyy} at {SelectedTimeSlot.Value:hh\\:mm}.",
                     "OK");
+
+                // Navigate to the detail page to show booking details
+                NavigateToServiceDetail();
 
                 // Clear selected slot after booking
                 SelectedTimeSlot = null;
                 OnPropertyChanged(nameof(SelectedTimeSlot));
-
-                // Navigate to the detail page to show booking details
-                NavigateToServiceDetail();
             }
         }
 
         private async void NavigateToServiceDetail()
         {
-            await Shell.Current.GoToAsync($"servicedetail?serviceDate={SelectedDate:MMMM dd, yyyy}&serviceTime={SelectedTimeSlot}");
+            if (SelectedTimeSlot.HasValue)
+            {
+                await Shell.Current.GoToAsync($"///servicedetail?serviceDate={SelectedDate:MMMM dd, yyyy}&serviceTime={SelectedTimeSlot.Value:hh\\:mm}");
+            }
         }
     }
 }

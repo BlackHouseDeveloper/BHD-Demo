@@ -10,23 +10,23 @@ namespace BHD_Demo.Views.Main
             BindingContext = new WelcomeViewModel();  // Set the ViewModel for the page
         }
 
-protected override bool OnBackButtonPressed()
-{
-    // If you want to show a confirmation dialog before exiting
-    Dispatcher.Dispatch(async () =>
-    {
-        bool shouldLeave = await Application.Current.MainPage.DisplayAlert("Exit?", 
-            "Do you want to exit the app?", "Yes", "No");
-    
-        if (shouldLeave)
+        protected override bool OnBackButtonPressed()
         {
-            base.OnBackButtonPressed();
-        }
-    });
+            // If you want to show a confirmation dialog before exiting
+            Dispatcher.Dispatch(async () =>
+            {
+                bool shouldLeave = await Application.Current.MainPage.DisplayAlert("Exit?",
+                    "Do you want to exit the app?", "Yes", "No");
 
-    // Prevent default behavior
-    return true;
-}
+                if (shouldLeave)
+                {
+                    base.OnBackButtonPressed();
+                }
+            });
+
+            // Prevent default behavior
+            return true;
+        }
 
         private void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
         {
