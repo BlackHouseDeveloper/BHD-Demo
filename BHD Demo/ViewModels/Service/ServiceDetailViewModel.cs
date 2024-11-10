@@ -1,25 +1,31 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.ComponentModel;
+using BHD_Demo.Models.Service;
 
 namespace BHD_Demo.ViewModels.Service
 {
-    // Query properties
+    // Query properties for navigation
     [QueryProperty(nameof(ServiceDateString), "serviceDate")]
     [QueryProperty(nameof(ServiceTimeString), "serviceTime")]
+    [QueryProperty(nameof(ServiceDescription), "serviceDescription")]
+    [QueryProperty(nameof(ServiceName), "serviceName")]
     public partial class ServiceDetailViewModel : BaseViewModel
     {
         [ObservableProperty]
+        private ScheduledService scheduledService;
+         [ObservableProperty]
         private DateTime? serviceDate;
         [ObservableProperty]
         private TimeSpan? serviceTime;
+        
 
-        public RelayCommand NavigateToServicechedulerCommand { get; }
+        public RelayCommand NavigateToServiceSchedulerCommand { get; }
 
         public ServiceDetailViewModel()
         {
-
-            NavigateToServicechedulerCommand = new RelayCommand(async () => await Shell.Current.GoToAsync("//scheduler"));
+            NavigateToServiceSchedulerCommand = new RelayCommand(async () => await Shell.Current.GoToAsync("//scheduler"));
+            ScheduledService = new ScheduledService(); // Initialize with a default ScheduledService instance
         }
 
         // Query properties
@@ -29,8 +35,8 @@ namespace BHD_Demo.ViewModels.Service
             {
                 if (DateTime.TryParse(value, out var date))
                 {
-                    ServiceDate = date;
-                    OnPropertyChanged(nameof(ServiceDate)); // Explicitly raise PropertyChanged event
+                    ScheduledService.ServiceDate = date;
+                    OnPropertyChanged(nameof(ScheduledService));
                 }
             }
         }
@@ -41,19 +47,39 @@ namespace BHD_Demo.ViewModels.Service
             {
                 if (TimeSpan.TryParse(value, out var time))
                 {
-                    ServiceTime = time;
-                    OnPropertyChanged(nameof(ServiceTime)); // Explicitly raise PropertyChanged event
+                    ScheduledService.ServiceTime = time; // Format time as string
+                    OnPropertyChanged(nameof(ScheduledService));
                 }
+            }
+        }
+
+        public string ServiceDescription
+        {
+            set
+            {
+                ScheduledService.Description = value;
+                OnPropertyChanged(nameof(ScheduledService));
+            }
+        }
+
+        public string ServiceName
+        {
+            set
+            {
+                ScheduledService.ServiceName = value;
+                OnPropertyChanged(nameof(ScheduledService));
             }
         }
 
         protected override void OnPropertyChanged(PropertyChangedEventArgs e)
         {
             base.OnPropertyChanged(e);
-            if (e.PropertyName == nameof(ServiceDate) || e.PropertyName == nameof(ServiceTime))
+            if (e.PropertyName == nameof(ScheduledService))
             {
-                Console.WriteLine($"ServiceDate changed: {ServiceDate}");
-                Console.WriteLine($"ServiceTime changed: {ServiceTime}");
+                Console.WriteLine($"Service Name: {ScheduledService.ServiceName}");
+                Console.WriteLine($"Service Date: {ScheduledService.ServiceDate}");
+                Console.WriteLine($"Service Time: {ScheduledService.ServiceTime}");
+                Console.WriteLine($"Description: {ScheduledService.Description}");
             }
         }
     }

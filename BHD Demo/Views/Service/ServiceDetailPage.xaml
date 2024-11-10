@@ -13,19 +13,36 @@
                      FontSize="24"
                      HorizontalOptions="Center"/>
 
-              <Label Text="Service Date:"
-                     FontSize="18"/>
-              <Label Text="{Binding ServiceDate, StringFormat='{}{0:MMMM dd, yyyy}'}"
+              <!-- Display Service Name -->
+              <Label Text="Service Name:"
+                     FontSize="18" FontAttributes="Bold"/>
+              <Label Text="{Binding ScheduledService.ServiceName}"
                      FontSize="16"/>
 
-              <Label Text="Service Time:"
-                     FontSize="18"/>
-              <Label Text="{Binding ServiceTime, StringFormat='{}{0:hh\\:mm}'}"
+              <!-- Display Service Date -->
+              <Label Text="Service Date:"
+                     FontSize="18" FontAttributes="Bold"/>
+              <Label Text="{Binding ScheduledService.ServiceDate, StringFormat='{}{0:MMMM dd, yyyy}'}"
                      FontSize="16"/>
+
+              <!-- Display Service Time -->
+              <Label Text="Service Time:"
+                     FontSize="18" FontAttributes="Bold"/>
+              <Label Text="{Binding ScheduledService.ServiceTime, StringFormat='{}{0:hh\\:mm}'}"
+                     FontSize="16"/>
+
+              <!-- Display Service Duration -->
+
+              <!-- Display Service Discription -->
+              <Label Text="Description:"
+                     FontSize="18" FontAttributes="Bold"/>
+              <Label Text="{Binding ScheduledService.Description}" LineBreakMode="WordWrap"
+                     FontSize="16"/>
+
 
               <!-- Button to Navigate Back to Store Page -->
               <Button Text="Back to Scheduler"
-                      Command="{Binding NavigateToServicechedulerCommand}"
+                      Command="{Binding NavigateToServiceSchedulerCommand}"
                       HorizontalOptions="Center"/>
 
        </StackLayout>

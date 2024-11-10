@@ -1,9 +1,8 @@
 using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
-using Microsoft.Maui.Controls;
 using CommunityToolkit.Mvvm.Input;
 using BHD_Demo.Models.Store;
-using BHD_Demo.Views.Store;
+
 
 namespace BHD_Demo.ViewModels.Store
 {

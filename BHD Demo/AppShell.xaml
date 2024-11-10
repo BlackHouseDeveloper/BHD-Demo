@@ -22,6 +22,7 @@
             <BackButtonBehavior IsEnabled="False"/>
         </Shell.BackButtonBehavior>
     </ShellContent>
+    
     <!-- Simulated Login -->
     <ShellContent Route="login"
             ContentTemplate="{DataTemplate main:LoginPage}"/>
@@ -39,10 +40,13 @@
     <ShellContent Route="servicedetail"
             ContentTemplate="{DataTemplate service:ServiceDetailPage}"/>
 
-    <!-- Group App Page -->
+    <!--Define Group App Related Routes -->
     <ShellContent Route="groupapp"
             ContentTemplate="{DataTemplate groupapp:GroupAppPage}"/>
-
+    <ShellContent Route="groupdetail" 
+            ContentTemplate="{DataTemplate groupapp:GroupDetailPage}" />
+    <ShellContent Route="addgroup"
+            ContentTemplate="{DataTemplate groupapp:AddGroupPage}" />
 
 
 </Shell>
