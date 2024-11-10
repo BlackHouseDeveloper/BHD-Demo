@@ -7,7 +7,7 @@ namespace BHD_Demo.Views.GroupApp
         public GroupAppPage()
         {
             InitializeComponent();
-             BindingContext = new GroupAppViewModel();  // Set the ViewModel for the page
+             BindingContext = new GroupViewModel();  // Set the ViewModel for the page
         }
     }
 }
