@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BHD_Demo.Views.GroupApp.GroupDetailPage"
+             Title="Group Details">
+
+    <StackLayout Padding="20">
+        <Label Text="{Binding SelectedGroup.GroupName}" FontSize="24" HorizontalOptions="Center" />
+        <Label Text="{Binding SelectedGroup.Description}" FontSize="16" HorizontalOptions="Center" />
+
+        <Label Text="Members:" FontSize="18" />
+        <ListView ItemsSource="{Binding SelectedGroup.Members}" 
+                  VerticalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button Text="Add Member" Command="{Binding AddMemberCommand}" />
+    </StackLayout>
+</ContentPage>
