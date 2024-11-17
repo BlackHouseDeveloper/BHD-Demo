@@ -118,14 +118,6 @@
 /Users/calvinccarter/Projects/BHD Demo/BHD Demo/obj/Debug/net8.0-android/BHD Demo.AssemblyInfo.cs
 /Users/calvinccarter/Projects/BHD Demo/BHD Demo/obj/Debug/net8.0-android/BHD Demo.csproj.CoreCompileInputs.cache
 /Users/calvinccarter/Projects/BHD Demo/BHD Demo/obj/Debug/net8.0-android/BHD Demo.sourcelink.json
-/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-android/BHD Demo.runtimeconfig.json
-/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-android/BHD Demo.dll
-/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-android/BHD Demo.pdb
-/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-android/com.companyname.bhddemo.apk
-/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-android/com.companyname.bhddemo.aab
-/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-android/com.companyname.bhddemo-Signed.aab
-/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-android/com.companyname.bhddemo-Signed.apk
-/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-android/com.companyname.bhddemo-Signed.apk.idsig
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/build.props
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/adb.props
@@ -246,6 +238,14 @@
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/BHD Demo.AssemblyInfo.cs
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/BHD Demo.csproj.CoreCompileInputs.cache
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/BHD Demo.sourcelink.json
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-android/BHD Demo.runtimeconfig.json
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-android/BHD Demo.dll
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-android/BHD Demo.pdb
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-android/com.companyname.bhddemo.apk
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-android/com.companyname.bhddemo.aab
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-android/com.companyname.bhddemo-Signed.aab
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-android/com.companyname.bhddemo-Signed.apk
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-android/com.companyname.bhddemo-Signed.apk.idsig
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/XamlC.stamp
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/BHD Demo.dll
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/BHD Demo.pdb
@@ -310,6 +310,8 @@
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/android/assets/Microsoft.Extensions.Primitives.dll
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/android/assets/Microsoft.Maui.Controls.Compatibility.dll
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/android/assets/Microsoft.Maui.Controls.dll
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/android/assets/Microsoft.Maui.Controls.Maps.dll
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/android/assets/Microsoft.Maui.Controls.Maps.pdb
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/android/assets/Microsoft.Maui.Controls.pdb
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/android/assets/Microsoft.Maui.Controls.Xaml.dll
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/android/assets/Microsoft.Maui.Controls.Xaml.pdb
@@ -318,6 +320,8 @@
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/android/assets/Microsoft.Maui.Essentials.pdb
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/android/assets/Microsoft.Maui.Graphics.dll
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/android/assets/Microsoft.Maui.Graphics.pdb
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/android/assets/Microsoft.Maui.Maps.dll
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/android/assets/Microsoft.Maui.Maps.pdb
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/android/assets/Microsoft.Maui.pdb
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/android/assets/Microsoft.VisualBasic.Core.dll
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-android/android/assets/Microsoft.VisualBasic.dll
