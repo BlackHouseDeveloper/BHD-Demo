@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Root element SwipeView allows swipe gestures -->
+<SwipeView x:Class="BHD_Demo.Views.Store.Templates.BasketItemTemplate"
+           xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+           xmlns:models="clr-namespace:BHD_Demo.Models.Store.Basket"
+           xmlns:vm="clr-namespace:BHD_Demo.ViewModels.Store"
+           Padding="4"
+           x:DataType="models:BasketItem"
+           HeightRequest="88">
+    <!-- Height of the SwipeView -->
+
+    <!-- Resource dictionary containing reusable styles -->
+    <SwipeView.Resources>
+        <ResourceDictionary>
+            <!-- Style for displaying the unit price of the order -->
+            <Style x:Key="OrderItemUnitPriceStyle"
+                   TargetType="{x:Type Label}">
+                <Setter Property="FontFamily"
+                        Value="Montserrat-Regular"/>
+                <Setter Property="FontSize"
+                        Value="{StaticResource MidMediumSize}"/>
+                <Setter Property="HorizontalOptions"
+                        Value="Start"/>
+            </Style>
+
+            <!-- Style for displaying the total price -->
+            <Style x:Key="OrderTotalStyle"
+                   TargetType="{x:Type Label}">
+                <Setter Property="FontFamily"
+                        Value="Montserrat-Regular"/>
+                <Setter Property="FontSize"
+                        Value="{StaticResource LargerSize}"/>
+                <Setter Property="TextColor"
+                        Value="{StaticResource ImportantColor}"/>
+                <Setter Property="HorizontalOptions"
+                        Value="End"/>
+            </Style>
+
+            <!-- Style for displaying the quantity -->
+            <Style x:Key="QuantityStyle"
+                   TargetType="{x:Type Label}">
+                <Setter Property="FontFamily"
+                        Value="Montserrat-Regular"/>
+                <Setter Property="HorizontalOptions"
+                        Value="End"/>
+                <Setter Property="VerticalOptions"
+                        Value="Fill"/>
+            </Style>
+        </ResourceDictionary>
+    </SwipeView.Resources>
+
+    <!-- Swipe actions available on the right -->
+    <SwipeView.RightItems>
+        <SwipeItems>
+            <!-- Swipe action to delete an item -->
+            <SwipeItem
+                BackgroundColor="Red"
+                Command="{Binding Source={RelativeSource AncestorType={x:Type vm:BasketViewModel}}, Path=DeleteCommand}"
+                CommandParameter="{Binding}"
+                Text="Delete"/>
+        </SwipeItems>
+    </SwipeView.RightItems>
+
+    <!-- Main layout: a Grid to structure the content -->
+    <Grid BackgroundColor="{AppThemeBinding Dark={StaticResource DarkBackgroundColor}, Light={StaticResource LightBackgroundColor}}">
+        <!-- Adjust padding based on the platform -->
+        <Grid.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="iOS, Android"
+                    Value="0"/>
+                <!-- No padding for mobile -->
+                <On Platform="WinUI"
+                    Value="12, 0"/>
+                <!-- Extra padding for Windows -->
+            </OnPlatform>
+        </Grid.Padding>
+
+        <!-- Define grid columns and rows -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <!-- First column adjusts to content -->
+            <ColumnDefinition Width="*"/>
+            <!-- Second column takes remaining space -->
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <!-- Main content row -->
+            <RowDefinition Height="Auto"/>
+            <!-- Second row adjusts to content -->
+            <RowDefinition Height="1"/>
+            <!-- Third row acts as a divider -->
+        </Grid.RowDefinitions>
+
+        <!-- Product image -->
+        <Image
+            Grid.Row="0"
+            Grid.Column="0"
+            Margin="12,0,0,0"
+            Aspect="AspectFit"
+            HeightRequest="74"
+            Source="{Binding PictureUrl}"
+            VerticalOptions="Center"
+                WidthRequest="74"/>
+        <!-- Centers vertically -->
+
+        <!-- Inner grid for product details -->
+        <Grid Grid.Row="0"
+              Grid.Column="1"
+              Margin="6">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <!-- Product name -->
+                <RowDefinition/>
+                <!-- Price and quantity -->
+                <RowDefinition/>
+                <!-- Total -->
+            </Grid.RowDefinitions>
+
+            <!-- Product name -->
+            <Label Grid.Row="0"
+                   Text="{Binding ProductName, Converter={StaticResource ToUpperConverter}}"/>
+
+            <!-- Price and quantity -->
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <!-- Unit price -->
+                <Label Grid.Column="0"
+                       Style="{StaticResource OrderItemUnitPriceStyle}"
+                       Text="{Binding UnitPrice, StringFormat='${0:N2}'}"/>
+                
+                <Label Grid.Column="1" Style="{StaticResource QuantityStyle}" Text="{Binding Quantity}"/>
+            </Grid>
+
+
+            <Label Grid.Row="2"
+                   Style="{StaticResource OrderTotalStyle}"
+                   Text="{Binding Total, StringFormat='${0:N2}'}"/>
+
+            <!-- Delete button visible only on desktop -->
+            <Button Grid.Row="2"
+                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:BasketViewModel}}, Path=DeleteCommand}"
+                    CommandParameter="{Binding}"
+                    HorizontalOptions="Start"
+                    IsVisible="{OnIdiom False, Desktop=True}"
+                    Text="Delete"/>
+        </Grid>
+
+        <!-- Price change notification -->
+        <Grid Grid.Row="1"
+              Grid.Column="0"
+              Grid.ColumnSpan="2"
+              BackgroundColor="#F0AD4E"
+              IsVisible="{Binding HasNewPrice}">
+            <Label
+                HeightRequest="60"
+                HorizontalOptions="Fill"
+                HorizontalTextAlignment="Center"
+                Text="{Binding OldUnitPrice, StringFormat='Note that the price of this article changed...'}"
+                VerticalOptions="Fill"
+                VerticalTextAlignment="Center"/>
+        </Grid>
+
+        <!-- Divider at the bottom -->
+        <Grid Grid.Row="2"
+              Grid.Column="0"
+              Grid.ColumnSpan="2"
+              BackgroundColor="Gray"/>
+    </Grid>
+</SwipeView>

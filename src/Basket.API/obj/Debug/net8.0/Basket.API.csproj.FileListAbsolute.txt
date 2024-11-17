@@ -1,0 +1,8 @@
+/Users/calvinccarter/Projects/BHD Demo/src/Basket.API/obj/Debug/net8.0/Basket.API.csproj.AssemblyReference.cache
+/Users/calvinccarter/Projects/BHD Demo/src/Basket.API/obj/Debug/net8.0/Basket.API.GeneratedMSBuildEditorConfig.editorconfig
+/Users/calvinccarter/Projects/BHD Demo/src/Basket.API/obj/Debug/net8.0/Basket.API.AssemblyInfoInputs.cache
+/Users/calvinccarter/Projects/BHD Demo/src/Basket.API/obj/Debug/net8.0/Basket.API.AssemblyInfo.cs
+/Users/calvinccarter/Projects/BHD Demo/src/Basket.API/obj/Debug/net8.0/Basket.API.csproj.CoreCompileInputs.cache
+/Users/calvinccarter/Projects/BHD Demo/src/Basket.API/obj/Debug/net8.0/Basket.API.MvcApplicationPartsAssemblyInfo.cs
+/Users/calvinccarter/Projects/BHD Demo/src/Basket.API/obj/Debug/net8.0/Basket.API.MvcApplicationPartsAssemblyInfo.cache
+/Users/calvinccarter/Projects/BHD Demo/src/Basket.API/obj/Debug/net8.0/Basket.API.sourcelink.json

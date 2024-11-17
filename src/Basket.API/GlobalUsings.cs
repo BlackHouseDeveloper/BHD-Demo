@@ -1,0 +1,11 @@
+global using System.ComponentModel.DataAnnotations;
+global using System.Security.Claims;
+global using System.Text.Json;
+global using Grpc.Core;
+global using Microsoft.AspNetCore.Authorization;
+global using BHD_Demo.Basket.API.Extensions;
+global using BHD_Demo.Basket.API.Grpc;
+global using BHD_Demo.EventBus.Abstractions;
+global using BHD_Demo.EventBus.Events;
+global using BHD_Demo.ServiceDefaults;
+global using StackExchange.Redis;
