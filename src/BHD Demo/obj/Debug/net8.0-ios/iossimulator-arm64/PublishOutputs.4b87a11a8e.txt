@@ -60,6 +60,9 @@
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-ios/iossimulator-arm64/publish/../BHD Demo.app/Microsoft.Maui.Essentials.dll
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-ios/iossimulator-arm64/publish/../BHD Demo.app/Microsoft.Maui.Graphics.dll
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-ios/iossimulator-arm64/publish/../BHD Demo.app/Microsoft.Maui.Maps.dll
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-ios/iossimulator-arm64/publish/../BHD Demo.app/Microsoft.Maui.Controls.HotReload.Forms.dll
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-ios/iossimulator-arm64/publish/../BHD Demo.app/Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-ios/iossimulator-arm64/publish/../BHD Demo.app/Microsoft.VisualStudio.DesignTools.TapContract.dll
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-ios/iossimulator-arm64/publish/../BHD Demo.app/BHD Demo.dll
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-ios/iossimulator-arm64/publish/../BHD Demo.app/Microsoft.CSharp.dll
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-ios/iossimulator-arm64/publish/../BHD Demo.app/Microsoft.VisualBasic.Core.dll

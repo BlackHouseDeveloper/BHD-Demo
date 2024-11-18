@@ -47,12 +47,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.Resources.Styles.
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
 
-[/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/ViewModels/Store/SettingsView.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.ViewModels.Store.SettingsView.xaml
-build_metadata.AdditionalFiles.TargetPath = ViewModels/Store/SettingsView.xaml
-build_metadata.AdditionalFiles.RelativePath = ViewModels/Store/SettingsView.xaml
-
 [/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/Views/GroupApp/AddGroupPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.Views.GroupApp.AddGroupPage.xaml
@@ -172,6 +166,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.Views.Store.ProfileView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views/Store/ProfileView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/Store/ProfileView.xaml
+
+[/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/Views/Store/SettingsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BHD_Demo.Views.Store.SettingsView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Store/SettingsView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Store/SettingsView.xaml
 
 [/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/Views/Store/StorePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

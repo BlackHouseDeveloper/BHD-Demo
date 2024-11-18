@@ -327,3 +327,9 @@
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-ios/iossimulator-arm64/BHD Demo.pdb
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-ios/iossimulator-arm64/BHD Demo.genruntimeconfig.cache
 /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-ios/iossimulator-arm64/ref/BHD Demo.dll
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-ios/iossimulator-arm64/Microsoft.Maui.Controls.HotReload.Forms.dll
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-ios/iossimulator-arm64/Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-ios/iossimulator-arm64/Microsoft.VisualStudio.DesignTools.TapContract.dll
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-ios/iossimulator-arm64/resourcestamps/Microsoft.Maui.Controls.HotReload.Forms.stamp
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-ios/iossimulator-arm64/resourcestamps/Microsoft.VisualStudio.DesignTools.MobileTapContracts.stamp
+/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-ios/iossimulator-arm64/resourcestamps/Microsoft.VisualStudio.DesignTools.TapContract.stamp
