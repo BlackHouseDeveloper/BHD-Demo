@@ -17,7 +17,7 @@ public class MauiNavigationService : INavigationService
     {
         var user = await _appEnvironmentService.IdentityService.GetUserInfoAsync();
 
-        await NavigateToAsync(user == UserInfo.Default ? "//Login" : "//Main/Catalog");
+        await NavigateToAsync(user == UserInfo.Default ? "//Login" : "//StoreTab/Catalog");
     }
 
     public Task NavigateToAsync(string route, IDictionary<string, object> routeParameters = null)

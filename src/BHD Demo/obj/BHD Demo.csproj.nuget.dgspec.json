@@ -18,25 +18,25 @@
           "/Users/calvinccarter/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0-android",
-          "net8.0-ios",
-          "net8.0-maccatalyst"
+          "net9.0-android",
+          "net9.0-ios",
+          "net9.0-maccatalyst"
         ],
         "sources": {
           "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0-android34.0": {
-            "targetAlias": "net8.0-android",
+          "net9.0-android35.0": {
+            "targetAlias": "net9.0-android",
             "projectReferences": {}
           },
-          "net8.0-ios18.0": {
-            "targetAlias": "net8.0-ios",
+          "net9.0-ios18.0": {
+            "targetAlias": "net9.0-ios",
             "projectReferences": {}
           },
-          "net8.0-maccatalyst18.0": {
-            "targetAlias": "net8.0-maccatalyst",
+          "net9.0-maccatalyst18.0": {
+            "targetAlias": "net9.0-maccatalyst",
             "projectReferences": {}
           }
         },
@@ -48,12 +48,13 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0-android34.0": {
-          "targetAlias": "net8.0-android",
+        "net9.0-android35.0": {
+          "targetAlias": "net9.0-android",
           "dependencies": {
             "CommunityToolkit.Maui": {
               "target": "Package",
@@ -83,15 +84,11 @@
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.82, )"
-            },
-            "Microsoft.Maui.Controls.Compatibility": {
-              "target": "Package",
-              "version": "[8.0.82, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.Maui.Controls.Maps": {
               "target": "Package",
@@ -104,7 +101,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.10, )",
+              "version": "[9.0.0, )",
               "autoReferenced": true
             }
           },
@@ -127,10 +124,10 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         },
-        "net8.0-ios18.0": {
-          "targetAlias": "net8.0-ios",
+        "net9.0-ios18.0": {
+          "targetAlias": "net9.0-ios",
           "dependencies": {
             "CommunityToolkit.Maui": {
               "target": "Package",
@@ -160,15 +157,11 @@
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.82, )"
-            },
-            "Microsoft.Maui.Controls.Compatibility": {
-              "target": "Package",
-              "version": "[8.0.82, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.Maui.Controls.Maps": {
               "target": "Package",
@@ -181,7 +174,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.10, )",
+              "version": "[9.0.0, )",
               "autoReferenced": true
             }
           },
@@ -204,10 +197,10 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         },
-        "net8.0-maccatalyst18.0": {
-          "targetAlias": "net8.0-maccatalyst",
+        "net9.0-maccatalyst18.0": {
+          "targetAlias": "net9.0-maccatalyst",
           "dependencies": {
             "CommunityToolkit.Maui": {
               "target": "Package",
@@ -237,15 +230,11 @@
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.82, )"
-            },
-            "Microsoft.Maui.Controls.Compatibility": {
-              "target": "Package",
-              "version": "[8.0.82, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.Maui.Controls.Maps": {
               "target": "Package",
@@ -258,7 +247,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.10, )",
+              "version": "[9.0.0, )",
               "autoReferenced": true
             }
           },
@@ -282,11 +271,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
+        "android-arm64": {
+          "#import": []
+        },
+        "android-x64": {
+          "#import": []
+        },
+        "android-x86": {
+          "#import": []
+        },
         "iossimulator-arm64": {
+          "#import": []
+        },
+        "maccatalyst-arm64": {
+          "#import": []
+        },
+        "maccatalyst-x64": {
           "#import": []
         }
       }

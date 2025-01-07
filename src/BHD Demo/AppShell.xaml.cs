@@ -1,25 +1,33 @@
-﻿namespace BHD_Demo;
+﻿using BHD_Demo.Services.Store;
+using BHD_Demo.Views.Store;
+
+namespace BHD_Demo;
 
 public partial class AppShell : Shell
 {
-    public AppShell()
-    {
+private readonly INavigationService _navigationService;
+    
+    public AppShell(INavigationService navigationService)
+    {   
+        _navigationService = navigationService;
+        InitializeRouting();
+
         InitializeComponent();
-        Navigating += OnNavigating;
+        
     }
 
-    private async void OnNavigating(object sender, ShellNavigatingEventArgs e)
+    
+
+ 
+    private static void InitializeRouting()
     {
-        if (e.Target.Location.OriginalString != e.Current.Location.OriginalString)
-        {
-            // Ensure CurrentPage is not null
-            if (CurrentPage != null)
-            {
-                // Apply fade-out animation before navigating
-                await CurrentPage.FadeTo(0, 250);   // Fade out current page
-                await Task.Delay(100);              // Small delay
-            }
-        }
+        //Routing.RegisterRoute("Login", typeof(LoginView));
+        Routing.RegisterRoute("Filter", typeof(FiltersView));
+        Routing.RegisterRoute("ViewCatalogItem", typeof(CatalogItemView));
+        Routing.RegisterRoute("Basket", typeof(BasketView));
+        Routing.RegisterRoute("Settings", typeof(SettingsView));
+        Routing.RegisterRoute("OrderDetail", typeof(OrderDetailView));
+        Routing.RegisterRoute("Checkout", typeof(CheckoutView));
     }
 
     protected override async void OnNavigated(ShellNavigatedEventArgs args)
@@ -29,5 +37,7 @@ public partial class AppShell : Shell
         // Apply fade-in animation after navigating
         await CurrentPage.FadeTo(1, 250);   // Fade in new page
     }
+
+    
 
 }

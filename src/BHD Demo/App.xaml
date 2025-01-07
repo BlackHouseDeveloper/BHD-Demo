@@ -9,6 +9,51 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml"/>
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+
+             <!-- Global Colors -->
+            <Color x:Key="Background">#000000</Color>
+            <Color x:Key="Primary">#7851a9</Color>
+            <Color x:Key="Secondary">#000000</Color>
+            <Color x:Key="Accent">#7B53AC</Color>
+            <Color x:Key="BodyText">Gray</Color>
+            
+            <!-- Section Colors -->
+            <Color x:Key="ServicePrimary">#29404E</Color>
+            <Color x:Key="ThemeColor">#530100</Color>
+            <Color x:Key="GrayColor">Gray</Color>
+            <Color x:Key="BgColor">#F0F0F0</Color>
+
+            <!-- Styles for Sections -->
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.ForegroundColor" Value="White" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="White" />
+            </Style>
+                    <!-- Store Section Styles -->
+        <Style x:Key="StoreStyle" TargetType="Shell">
+            <Setter Property="Shell.BackgroundColor" Value="#FFFFFF" />
+            <Setter Property="Shell.ForegroundColor" Value="#530100" />
+            <Setter Property="Shell.TabBarBackgroundColor" Value="#FFFFFF" />
+            <Setter Property="Shell.TabBarForegroundColor" Value="#530100" />
+        </Style>
+
+        <!-- Service Scheduler Styles -->
+        <Style x:Key="ServiceStyle" TargetType="Shell">
+            <Setter Property="Shell.BackgroundColor" Value="#29404E" />
+            <Setter Property="Shell.ForegroundColor" Value="#FFA700" />
+            <Setter Property="Shell.TabBarBackgroundColor" Value="#29404E" />
+            <Setter Property="Shell.TabBarForegroundColor" Value="#FFA700" />
+        </Style>
+
+        <!-- Group App Styles -->
+        <Style x:Key="GroupAppStyle" TargetType="Shell">
+            <Setter Property="Shell.BackgroundColor" Value="#3e2956" />
+            <Setter Property="Shell.ForegroundColor" Value="#ECA825" />
+            <Setter Property="Shell.TabBarBackgroundColor" Value="#3e2956" />
+            <Setter Property="Shell.TabBarForegroundColor" Value="#ECA825" />
+        </Style>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

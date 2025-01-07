@@ -28,7 +28,9 @@ namespace BHD_Demo.ViewModels.Service
             LoadAvailableTimeSlots();
 
             BookServiceCommand = new RelayCommand(OnBookService);
+#pragma warning disable CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
             NavigateToServiceDetailCommand = new RelayCommand<ScheduledService>(NavigateToServiceDetail);
+#pragma warning restore CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
         }
 
         private void LoadAvailableTimeSlots()

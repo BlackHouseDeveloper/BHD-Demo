@@ -1,1 +1,0 @@
--v --force --timestamp=none --sign - --entitlements /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/Entitlements.xcent /Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/BHD Demo.app

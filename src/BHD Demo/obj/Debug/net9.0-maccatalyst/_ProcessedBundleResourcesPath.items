@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/close@3x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/close@2x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/close.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/cart@3x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/cart@2x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/cart.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/arrow_left@3x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/arrow_left@2x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/arrow_left.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/dotnet_bot@3x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/dotnet_bot@2x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/dotnet_bot.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/logo_header@3x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/logo_header@2x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/logo_header.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/Resources/loginbckgrnd1.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/Resources/fake_product_05.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/logo_footer@3x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/logo_footer@2x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/logo_footer.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/Resources/header.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/Resources/fake_product_04.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/Resources/header_home.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/Resources/fake_product_01.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/trash@3x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/trash@2x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/trash.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/Resources/loginbckgrnd.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/Resources/fake_product_02.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/filters@3x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/filters@2x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/filters.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/Resources/fake_product_03.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/user@3x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/user@2x.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/user.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/Resources/noimage.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/Resources/fake_product_06.png" />
+    <BundleResource Include="/Users/calvinccarter/Projects/BHD Demo/src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/Resources/bhd_logo.png" />
+    <BundleResource Include="obj/Debug/net9.0-maccatalyst/resizetizer/f/FontAwesomeRegular.otf" />
+    <BundleResource Include="obj/Debug/net9.0-maccatalyst/resizetizer/f/FontAwesomeSolid.otf" />
+    <BundleResource Include="obj/Debug/net9.0-maccatalyst/resizetizer/f/Iceland-Regular.ttf" />
+    <BundleResource Include="obj/Debug/net9.0-maccatalyst/resizetizer/f/Montserrat-Bold.ttf" />
+    <BundleResource Include="obj/Debug/net9.0-maccatalyst/resizetizer/f/Montserrat-Regular.ttf" />
+    <BundleResource Include="obj/Debug/net9.0-maccatalyst/resizetizer/f/OpenSans-Regular.ttf" />
+    <BundleResource Include="obj/Debug/net9.0-maccatalyst/resizetizer/f/OpenSans-Semibold.ttf" />
+  </ItemGroup>
+</Project>

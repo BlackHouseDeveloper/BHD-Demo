@@ -12,7 +12,7 @@ namespace BHD_Demo.ViewModels.Main
         public DashboardViewModel()
         {
             // Commands for navigation
-            NavigateToStoreCommand = new Command(async () => await Shell.Current.GoToAsync("//store"));
+            NavigateToStoreCommand = new Command(async () => await Shell.Current.GoToAsync("//storeSplash"));
             NavigateToServiceCommand = new Command(async () => await Shell.Current.GoToAsync("//scheduler"));
             NavigateToGroupAppCommand = new Command(async () => await Shell.Current.GoToAsync("//groupapp"));
         }

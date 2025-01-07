@@ -78,7 +78,7 @@ public partial class LoginViewModel : ViewModelBase
 
                 if (isAuthenticated)
                 {
-                    await NavigationService.NavigateToAsync("//Main/Catalog");
+                    await NavigationService.NavigateToAsync("//StoreTab/Catalog");
                 }
             });
     }
@@ -93,7 +93,7 @@ public partial class LoginViewModel : ViewModelBase
 
                 if (loginSuccess)
                 {
-                    await NavigationService.NavigateToAsync("//Main/Catalog");
+                    await NavigationService.NavigateToAsync("//StoreTab/Catalog");
                 }
             });
     }

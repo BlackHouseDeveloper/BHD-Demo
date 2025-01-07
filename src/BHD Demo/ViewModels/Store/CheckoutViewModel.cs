@@ -123,7 +123,7 @@ public partial class CheckoutViewModel : ViewModelBase
                 .Send(new ProductCountChangedMessage(0));
 
             // Navigate to Orders
-            await NavigationService.NavigateToAsync("//Main/Catalog");
+            await NavigationService.NavigateToAsync("//StoreTab/Catalog");
 
             // Show Dialog
             await _dialogService.ShowAlertAsync("Order sent successfully!", "Checkout", "Ok");

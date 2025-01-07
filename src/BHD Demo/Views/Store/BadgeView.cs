@@ -95,11 +95,15 @@ public class BadgeView : Grid
     {
         base.OnHandlerChanging(args);
 
+#pragma warning disable CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
         _border.SizeChanged -= BadgeIndicatorSizeChanged;
+#pragma warning restore CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
 
         if (args.NewHandler is not null)
         {
+#pragma warning disable CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
             _border.SizeChanged += BadgeIndicatorSizeChanged;
+#pragma warning restore CS8622 // Nullability of reference types in type of parameter doesn't match the target delegate (possibly because of nullability attributes).
         }
     }
 
