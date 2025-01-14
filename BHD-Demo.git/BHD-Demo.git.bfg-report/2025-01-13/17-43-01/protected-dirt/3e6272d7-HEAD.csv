@@ -1,0 +1,4 @@
+e5c5e19808c77f391108bcfdace8dc75668fbce4,DELETE,regular-file,src/BHD Demo/obj/Debug/net8.0-ios/iossimulator-arm64/nativelibraries/aot-output/arm64/System.Private.CoreLib.dll.s,1255140,
+9d5e3071a582046ae23167196d0a11184caf0a5a,DELETE,regular-file,src/BHD Demo/obj/Debug/net8.0-ios/iossimulator-arm64/nativelibraries/aot-output/arm64/aot-instances.dll.s,88223117,
+487d11ff35d5dc90afc2e0ddbadd32e2af279a9b,DELETE,regular-file,src/BHD Demo/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/nativelibraries/aot-output/arm64/System.Private.CoreLib.dll.s,1232349,
+eaf47eec7648d408d0b7f26420ad0f4b6a1bd778,DELETE,regular-file,src/BHD Demo/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/nativelibraries/aot-output/arm64/aot-instances.dll.s,89778906,

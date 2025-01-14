@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BHD Demo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3e6272d7eba92b9f6502ad0085aea6693f2bf213")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+83c87213c9d3665475e5b2ef7e7056c652bcd69e")]
 [assembly: System.Reflection.AssemblyProductAttribute("BHD Demo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BHD Demo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
