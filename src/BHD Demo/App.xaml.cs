@@ -1,4 +1,4 @@
-﻿using BHD_Demo.Services.Store;
+using BHD_Demo.Services.Store;
 using BHD_Demo.Services.Store.AppEnvironment;
 using BHD_Demo.Services.Store.Settings;
 using BHD_Demo.Services.Store.Theme;
