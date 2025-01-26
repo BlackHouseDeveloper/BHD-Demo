@@ -1,4 +1,4 @@
-﻿using BHD_Demo.Services.Store;
+using BHD_Demo.Services.Store;
 using BHD_Demo.Views.Store;
 
 namespace BHD_Demo;
