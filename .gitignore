@@ -8572,3 +8572,15 @@ src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/Resources/header.png
 src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/Resources/loginbckgrnd.png
 src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/Resources/loginbckgrnd1.png
 src/BHD Demo/obj/Debug/net9.0-maccatalyst/resizetizer/r/Resources/noimage.png
+
+# PFPT-Foundry.sh script generated files
+*.sqlite
+*.db
+dev.physicallyfitpt.db
+pfpt.design.sqlite
+global.json
+Directory.Build.props
+.editorconfig
+.config/
+PhysicallyFitPT/
+PhysicallyFitPT.*/
